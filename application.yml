@@ -1,0 +1,14 @@
+global:
+  message: welcome ti global micrsevice
+logging:
+  level:
+   root:INFO
+management:
+  endpoints:
+     web:
+      exposure:
+        include: health, info, refersh
+    endpoint:
+      health:
+        show-details:always
+  
