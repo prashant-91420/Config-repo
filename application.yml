@@ -1,14 +1,18 @@
 global:
-  message: welcome ti global micrsevice
+  message: Welcome to global Microservices Environment!!
 logging:
   level:
-   root:INFO
+    root: INFO
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 management:
   endpoints:
-     web:
+    web:
       exposure:
-        include: health, info, refersh
-    endpoint:
-      health:
-        show-details:always
+        include: health, info, refresh
+  endpoint:
+    health:
+      show-details: always
   
